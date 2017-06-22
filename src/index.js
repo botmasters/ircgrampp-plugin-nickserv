@@ -97,6 +97,10 @@ export default class NickServPlugin extends PluginBase {
         this._autoconnect = false;
     }
 
+    getCompatibleVersion() {
+        return "~0.3.0";
+    }
+
     afterIrcconnectionCreate(connection) {
         this.debug('New connection, check if there are options for this');
 
