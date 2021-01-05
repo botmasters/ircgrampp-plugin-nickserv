@@ -5,13 +5,16 @@ module.exports = {
     },
     plugins: [
     ],
-    extends: [
-        "defaults",
-    ],
+    /*    extends: [
+        "eslint:defaults",
+    ],*/
     parserOptions: {
-        ecmaVersion: 6,
+        ecmaVersion: 8,
         sourceType: "module",
-        ecmaFeatures: {}
+        ecmaFeatures: {
+            spread: true,
+            experimentalObjectRestSpread: true,
+        },
     },
     rules: {
         "comma-dangle": 0,
