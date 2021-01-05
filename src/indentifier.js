@@ -75,7 +75,7 @@ class Indentifier extends EventEmitter {
     }
 
     get debug() {
-        return this._plugin.debug;
+        return (...args) => this._plugin.debug(this.identifier, ...args);
     }
 
     get Promise() {
