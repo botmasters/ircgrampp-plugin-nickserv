@@ -1,6 +1,6 @@
 {
   "name": "ircgrampp-plugin-nickserv",
-  "version": "0.3.0",
+  "version": "0.4.0-alpha1",
   "description": "Plugin for ircgrampp to identify irc user",
   "main": "lib/index.js",
   "scripts": {
